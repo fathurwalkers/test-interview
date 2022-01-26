@@ -39,8 +39,10 @@ $routes->get('/postregister', 'Dashboard::postregister');
 $routes->get('/logout', 'Dashboard::logout');
 
 // Generate Data 
+$routes->get('/chained-generate', 'Generate::chained_generate');
 $routes->get('/generate/produk', 'Generate::generate_produk');
 $routes->get('/generate/toko', 'Generate::generate_toko');
+$routes->get('/generate/user', 'Generate::generate_user');
 
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');

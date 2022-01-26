@@ -19,30 +19,47 @@ class Generate extends BaseController
     public function generate_user()
     {
         $faker      = $this->fake;
+        for ($i=0; $i < 10; $i++) { 
+            $randomlevel     = [
+                // '1'=>'admin',
+                '1'=>'penjual',
+                '2'=>'user'
+            ];
+            $key = array_rand($randomlevel);
+            $level = $randomlevel[$key];
+            $username = 'user' . $faker->randomNumber(5, true);
+            $saveuser = $this->usermodel->save([
+                'nama' => $faker->name(),
+                'username' => $username,
+                'password' => $username,
+                'level'   => $level
+            ]);
+        }
+        return redirect()->to('/produk/daftar-produk');
     }
 
     public function generate_toko()
     {
         $faker      = $this->fake;
-        $user       = $this->usermodel->findAll();
-        $randarray = array_rand($user);
-        $iduser = $user[$randarray]["id_user"];
-        $kode_toko        = 'TOKO-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
-        $savetoko = $this->tokomodel->save([
-            'nama_toko' => $faker->streetName(),
-            'pemilik_toko' => $faker->randomNumber(5, true),
-            'kode_toko' => $kode_toko,
-            'user_id'   => number_format($iduser)
-        ]);
-        var_dump($savetoko);
-        die;
+        for ($i=0; $i < 20; $i++) { 
+            $user       = $this->usermodel->where('level', 'penjual')->findAll();
+            $randarray = array_rand($user);
+            $iduser = $user[$randarray]["id_user"];
+            $kode_toko        = 'TOKO-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
+            $savetoko = $this->tokomodel->save([
+                'nama_toko' => $faker->streetName(),
+                'pemilik_toko' => $faker->randomNumber(5, true),
+                'kode_toko' => $kode_toko,
+                'user_id'   => number_format($iduser)
+            ]);
+        }
         return redirect()->to('/toko/daftar-toko');
     }
 
     public function generate_produk()
     {
         $faker      = $this->fake;
-        for ($i=0; $i < 25; $i++) { 
+        for ($i=0; $i < 100; $i++) { 
             $toko       = $this->tokomodel->findAll();
             $kode_produk        = 'PRODUK-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
             $randomgambarproduk     = [
@@ -65,5 +82,14 @@ class Generate extends BaseController
             ]);
         }
         return redirect()->to('/produk/daftar-produk');
+    }
+
+    public function chained_generate()
+    {
+        $this->generate_user();
+        $this->generate_toko();
+        $this->generate_produk();
+        echo "SUKSES GENERATE USER - TOKO - PRODUK!";
+        die;
     }
 }
