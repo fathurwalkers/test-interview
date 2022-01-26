@@ -19,10 +19,10 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="<?= base_url('/assets/adminlte') ?>/index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="<?= base_url('/assets/adminlte') ?>/index2.html" class="h1"><b>APLIKASI CRUD</b></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Silahkan Login</p>
 
       <form action="<?= base_url('/postlogin') ?>" method="post">
         <?= csrf_field() ?>
@@ -73,7 +73,7 @@
         <a href="forgot-password.html">I forgot my password</a>
       </p> -->
       <p class="mb-0 d-flex justify-content-center mt-3">
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="<?= base_url('/register') ?>" class="text-center">Belum punya akun? Daftar Sekarang disini!</a>
       </p>
     </div>
     <!-- /.card-body -->

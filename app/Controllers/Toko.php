@@ -16,6 +16,16 @@ class Toko extends BaseController
         $this->fake             = \Faker\Factory::create('id_ID');
     }
 
+    public function lihat_toko($id)
+    {
+        $toko = $this->tokomodel->where('id_toko', $id)->first();
+        $user   = $this->usermodel;
+        return view('dashboard/lihat-toko', [
+            'toko' => $toko,
+            'user' => $user
+        ]);
+    }
+
     public function daftar_toko()
     {
         $toko = $this->tokomodel->findAll();

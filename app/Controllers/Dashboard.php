@@ -26,6 +26,14 @@ class Dashboard extends BaseController
         }
     }
 
+    public function lihat_user($id)
+    {
+        $user = $this->usermodel->where('id_user', $id)->first();
+        return view('dashboard/lihat-user', [
+            'user' => $user
+        ]);
+    }
+
     public function daftar_user()
     {
         $user = $this->usermodel->findAll();
@@ -65,10 +73,10 @@ class Dashboard extends BaseController
 
     public function postregister()
     {
-        $this->usermodel->save([
+        $saveuser       = $this->usermodel->save([
             'username' => $this->request->getVar('username'),
             'password' => $this->request->getVar('password'),
-            'level' => "admin",
+            'level' => 'user',
         ]);
         return redirect()->to('/login');
     }

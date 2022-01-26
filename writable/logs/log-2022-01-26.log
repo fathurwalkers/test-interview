@@ -424,3 +424,5 @@ CRITICAL - 2022-01-26 17:12:21 --> There is no data to insert.
 #6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+ERROR - 2022-01-26 17:49:18 --> Column 'username' cannot be null
+ERROR - 2022-01-26 17:50:16 --> Column 'username' cannot be null

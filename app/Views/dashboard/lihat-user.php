@@ -1,7 +1,7 @@
 <?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('main-header') ?>
-Lihat Data Toko 
+Lihat Data Pengguna (User) 
 <?= $this->endSection() ?>
 
 <?php echo $this->section('main-content'); ?>
@@ -10,17 +10,16 @@ Lihat Data Toko
         <div class="card">
             <div class="card-body">
                 <div class="container">
-                    <?php $userss = $user->where('id_user', $toko["user_id"])->first(); ?>
                     <div class="row">
                         <div class="col-3">
-                            Nama Toko <br>
-                            Pemilik Toko <br>
-                            Kode Toko <br>
+                            Nama Lengkap <br>
+                            Username <br>
+                            Level <br>
                         </div>
                         <div class="col-3">
-                            <?= $toko["nama_toko"] ?> <br>
-                            <?= $userss["nama"] ?> <br>
-                            <?= $toko["kode_toko"] ?> <br>
+                            <?= $user["nama"] ?> <br>
+                            <?= $user["username"] ?> <br>
+                            <?= $user["level"] ?> <br>
                         </div>
                     </div>
 
