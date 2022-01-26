@@ -16,6 +16,16 @@ class Produk extends BaseController
         $this->fake             = \Faker\Factory::create('id_ID');
     }
 
+    public function lihat_produk($id)
+    {
+        $produk = $this->produkmodel->where('id_produk', $id)->first();
+        $toko   = $this->tokomodel;
+        return view('dashboard/lihat-produk', [
+            'produk' => $produk,
+            'toko' => $toko
+        ]);
+    }
+
     public function daftar_produk()
     {
         $produk = $this->produkmodel->findAll();

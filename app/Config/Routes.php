@@ -47,6 +47,7 @@ $routes->get('/generate/user', 'Generate::generate_user');
 // USER 
 $routes->get('/user/daftar-user', 'Dashboard::daftar_user');
 $routes->add('/user/hapus-user/(:any)', 'Dashboard::hapus_user/$1');
+$routes->add('/user/lihat-user/(:any)', 'Dashboard::lihat_user/$1');
 
 // TOKO 
 $routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
@@ -55,6 +56,7 @@ $routes->add('/toko/edit-toko/(:any)', 'Toko::edit_toko/$1');
 $routes->get('/toko/tambah-toko', 'Toko::tambah_toko');
 $routes->post('/toko/update-toko/(:any)', 'Toko::update_toko/$1');
 $routes->post('/toko/post-tambah-toko', 'Toko::post_tambah_toko');
+$routes->add('/toko/lihat-toko/(:any)', 'Toko::lihat_toko/$1');
 
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
@@ -63,6 +65,7 @@ $routes->add('/produk/edit-produk/(:any)', 'Produk::edit_produk/$1');
 $routes->get('/produk/tambah-produk', 'Produk::tambah_produk');
 $routes->post('/produk/update-produk/(:any)', 'Produk::update_produk/$1');
 $routes->post('/produk/post-tambah-produk', 'Produk::post_tambah_produk');
+$routes->add('/produk/lihat-produk/(:any)', 'Produk::lihat_produk/$1');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
