@@ -51,7 +51,10 @@ $routes->add('/user/hapus-user/(:any)', 'Dashboard::hapus_user/$1');
 // TOKO 
 $routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
 $routes->add('/toko/hapus-toko/(:any)', 'Toko::hapus_toko/$1');
+$routes->add('/toko/edit-toko/(:any)', 'Toko::edit_toko/$1');
 $routes->get('/toko/tambah-toko', 'Toko::tambah_toko');
+$routes->post('/toko/update-toko/(:any)', 'Toko::update_toko/$1');
+$routes->post('/toko/post-tambah-toko', 'Toko::post_tambah_toko');
 
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');

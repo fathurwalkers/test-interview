@@ -378,3 +378,49 @@ CRITICAL - 2022-01-26 16:10:33 --> The original file is not a valid file.
 #4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-01-26 17:08:38 --> Class 'App\Controllers\ProdukModel' not found
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(802): App\Controllers\Toko->__construct()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 17:09:37 --> There is no data to insert.
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(48): CodeIgniter\BaseModel->save(Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->post_tambah_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 17:10:19 --> There is no data to insert.
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(49): CodeIgniter\BaseModel->save(Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->post_tambah_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 17:11:51 --> There is no data to insert.
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(51): CodeIgniter\BaseModel->save(Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->post_tambah_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 17:12:21 --> There is no data to insert.
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(51): CodeIgniter\BaseModel->save(Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->post_tambah_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

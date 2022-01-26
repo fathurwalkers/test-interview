@@ -9,7 +9,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                Tambah Toko Baru 
+                Ubah Data Toko 
             </div>
             <div class="card-body">
                 <div class="container">
@@ -17,12 +17,12 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <form action="<?= base_url('/toko/post-tambah-toko'); ?>" method="POST" enctype="multipart/form-data">
+                            <form action="<?= base_url('/toko/update-toko'); ?>/<?= $toko["id_toko"] ?>" method="POST" enctype="multipart/form-data">
                             <?php echo csrf_field(); ?>
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1"><span style="color:red;">* </span>Nama Toko : </label>
-                                    <input type="text" class="form-control" placeholder="Masukkan Nama Toko... " name="nama_toko" required autofocus>
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama Toko... " name="nama_toko" required autofocus value="<?= $toko["nama_toko"] ?>">
                                     <small class="form-text text-muted">contoh : Gersamata Indah Abadi </small>
                                 </div>
 
