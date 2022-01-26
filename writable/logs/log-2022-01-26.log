@@ -40,3 +40,15 @@ CRITICAL - 2022-01-26 07:20:57 --> Call to undefined method CodeIgniter\Session\
 #2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-01-26 12:20:12 --> Class 'Faker\Factory' not found
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(802): App\Controllers\Generate->__construct()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 12:20:24 --> Class 'Faker\Factory' not found
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(802): App\Controllers\Generate->__construct()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
