@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
 $routes->get('/login', 'Dashboard::login');
+$routes->post('/postlogin', 'Dashboard::postlogin');
 $routes->get('/register', 'Dashboard::register');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {

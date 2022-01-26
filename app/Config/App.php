@@ -6,9 +6,10 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
-    public $baseURL = 'http://localhost:8080/';
+    // public $baseURL = 'http://localhost:8080/';
+    public $baseURL = 'http://localhost/aplikasi-tugas-besar/public/';
 
-    public $indexPage = '';
+    public $indexPage = 'index.php';
 
     public $uriProtocol = 'REQUEST_URI';
 

@@ -6,7 +6,7 @@ class Dashboard extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        return view('dashboard/index');
     }
 
     public function logout()
@@ -38,6 +38,8 @@ class Dashboard extends BaseController
 
     public function postlogin()
     {
+        echo "post login";
+        die;
         $session = session();
 
         $username = $this->request->getPost('username');
