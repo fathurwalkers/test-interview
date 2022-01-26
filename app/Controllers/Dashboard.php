@@ -34,6 +34,12 @@ class Dashboard extends BaseController
         ]);
     }
 
+    public function hapus_user($id)
+    {
+        $user = $this->usermodel->where('id_user', $id)->delete();
+        return redirect()->to('/user/daftar-user');
+    }
+
     public function logout()
     {
         $session = session();

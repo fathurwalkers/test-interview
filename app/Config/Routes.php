@@ -46,6 +46,7 @@ $routes->get('/generate/user', 'Generate::generate_user');
 
 // USER 
 $routes->get('/user/daftar-user', 'Dashboard::daftar_user');
+$routes->add('/user/hapus-user/(:any)', 'Dashboard::hapus_user/$1');
 
 // TOKO 
 $routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
