@@ -25,7 +25,6 @@ Daftar Produk
                         </tr>
                     </thead>
                     <tbody>
-
                         <?php foreach ($produk as $item) {  ?>
                         <?php $tokonama = $toko->where('id_toko', $item["toko_id"])->first(); ?>
                         <tr>

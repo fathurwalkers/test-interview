@@ -16,6 +16,11 @@ class Generate extends BaseController
         $this->fake             = \Faker\Factory::create('id_ID');
     }
 
+    public function generate_user()
+    {
+        $faker      = $this->fake;
+    }
+
     public function generate_toko()
     {
         $faker      = $this->fake;
