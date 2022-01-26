@@ -52,3 +52,154 @@ CRITICAL - 2022-01-26 12:20:24 --> Class 'Faker\Factory' not found
 #2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2022-01-26 12:24:20 --> Call to a member function phoneNumber() on null
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 12:28:18 --> syntax error, unexpected ','
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fathur...')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 12:30:21 --> Call to undefined method App\Models\UsersModel::getResult
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(22): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-26 12:41:09 --> Call to undefined function App\Controllers\dump()
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 12:43:21 --> array_rand() expects parameter 1 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 31, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(31): array_rand('produk2.jpg')
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:50:10 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 33, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(33): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:50:52 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 33, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(33): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:52:04 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 33, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(33): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-26 12:53:44 --> Unknown column 'id_toko' in 'field list'
+CRITICAL - 2022-01-26 12:53:44 --> Call to a member function getResult() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(22): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:53:53 --> Call to undefined method App\Models\UsersModel::getResult
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(22): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-26 12:54:05 --> Unknown column 'id_toko' in 'field list'
+CRITICAL - 2022-01-26 12:54:05 --> Call to a member function getResult() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(22): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:56:08 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 34, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(34): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:56:14 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 34, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(34): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:56:34 --> array_rand() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand() ex...', 'C:\\Users\\fathur...', 34, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(34): array_rand(NULL)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 12:56:51 --> syntax error, unexpected ')'
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fathur...')
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-01-26 12:59:13 --> Unknown column 'level' in 'where clause'
+CRITICAL - 2022-01-26 12:59:13 --> Call to a member function getResult() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(22): CodeIgniter\BaseModel->findAll()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-26 13:04:05 --> Call to undefined function App\Controllers\int_val()
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 13:09:50 --> Call to a member function find() on null
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->daftar_produk()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-26 13:16:14 --> Call to a member function where() on null
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(210): include()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/dafta...', Array, true)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Produk.php(21): view('dashboard/dafta...', Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->daftar_produk()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

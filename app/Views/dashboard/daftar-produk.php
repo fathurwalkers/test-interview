@@ -18,19 +18,24 @@ Daftar Produk
                     <thead>
                         <tr>
                             <th>Nama Produk</th>
+                            <th>Toko Pemilik</th>
                             <th>Harga</th>
                             <th>Kode Produk</th>
                         </tr>
                     </thead>
                     <tbody>
+
+                        <?php foreach ($produk as $item) {  ?>
+                        <?php $tokonama = $toko->where('id_toko', $item["toko_id"])->first(); ?>
                         <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+                            <td><?= $item["nama_produk"] ?></td>
+                            <td><?= $tokonama["nama_toko"] ?></td>
+                            <td><?= $item["harga_produk"] ?></td>
+                            <td><?= $item["kode_produk"] ?></td>
                         </tr>
+
+                        <?php } ?>
+
                     </tbody>
                 </table>
 
