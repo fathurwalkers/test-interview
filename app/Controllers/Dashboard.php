@@ -1,24 +1,45 @@
 <?php
 
 namespace App\Controllers;
+// use App\Models\ProdukModel;
+use App\Models\UsersModel;
+use Config\Database;
 
 class Dashboard extends BaseController
 {
+    public function __construct()
+    {
+        $this->usermodel = new UsersModel();
+        // $this->produkmodel = new ProdukModel();
+    }
+
     public function index()
     {
-        return view('dashboard/index');
+        $users = session('username');
+        if (!$users) {
+            return redirect()->to('/login');
+        } else {
+            return view('dashboard/index', ['users' => $users]);
+        }
     }
 
     public function logout()
     {
         $session = session();
-        $session->stop();
+        $session->remove('username');
         return redirect()->to('/login');
     }
 
     public function login()
     {
-        return view('login');
+        $users = session('username');
+
+        if ($users == NULL) {
+            return view('login');
+        } else {
+            return redirect()->to('/');
+        }
+        // return view('login');
     }
 
     public function register()
@@ -38,8 +59,6 @@ class Dashboard extends BaseController
 
     public function postlogin()
     {
-        echo "post login";
-        die;
         $session = session();
 
         $username = $this->request->getPost('username');

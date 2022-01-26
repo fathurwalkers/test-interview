@@ -35,6 +35,8 @@ $routes->get('/', 'Dashboard::index');
 $routes->get('/login', 'Dashboard::login');
 $routes->post('/postlogin', 'Dashboard::postlogin');
 $routes->get('/register', 'Dashboard::register');
+$routes->get('/postregister', 'Dashboard::postregister');
+$routes->get('/logout', 'Dashboard::logout');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
