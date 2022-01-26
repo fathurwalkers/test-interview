@@ -55,6 +55,8 @@ $routes->add('/toko/hapus-toko/(:any)', 'Toko::hapus_toko/$1');
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
 $routes->add('/produk/hapus-produk/(:any)', 'Produk::hapus_produk/$1');
+$routes->get('/produk/tambah-produk', 'Produk::tambah_produk');
+$routes->post('/produk/post-tambah-produk', 'Produk::post_tambah_produk');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

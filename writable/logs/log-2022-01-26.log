@@ -236,3 +236,45 @@ CRITICAL - 2022-01-26 13:34:04 --> Call to a member function where() on array
 #6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-01-26 14:54:46 --> Too few arguments to function App\Controllers\Produk::tambah_produk(), 0 passed in C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php on line 825 and exactly 1 expected
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->tambah_produk()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-01-26 15:15:40 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-01-26 15:15:40 --> Call to a member function getFirstRow() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Produk.php(43): CodeIgniter\BaseModel->first()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->post_tambah_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-26 15:15:49 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-01-26 15:15:49 --> Call to a member function getFirstRow() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Produk.php(43): CodeIgniter\BaseModel->first()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->post_tambah_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-26 15:16:08 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-01-26 15:16:08 --> Call to a member function getFirstRow() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Produk.php(43): CodeIgniter\BaseModel->first()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->post_tambah_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-01-26 15:16:12 --> Unknown column 'username' in 'where clause'
+CRITICAL - 2022-01-26 15:16:12 --> Call to a member function getFirstRow() on bool
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Produk.php(43): CodeIgniter\BaseModel->first()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Produk->post_tambah_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

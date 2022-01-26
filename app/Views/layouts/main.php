@@ -165,7 +165,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('/produk/daftar-produk') ?>" class="nav-link">
+                <a href="<?= base_url('/produk/tambah-produk') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tambah Produk</p>
                 </a>
