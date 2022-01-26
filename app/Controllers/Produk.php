@@ -37,13 +37,11 @@ class Produk extends BaseController
         $session = session('username');
         $user   = $this->usermodel->where('username', $session)->first();
         $toko   = $this->tokomodel->where('user_id', $user["id_user"])->first();
-
         if ($toko == NULL) {
             return redirect()->to('/produk/daftar-produk');
         } else {
             return view('dashboard/tambah-produk');
         }
-
     }
 
     public function post_tambah_produk()
@@ -52,7 +50,6 @@ class Produk extends BaseController
         $session = session('username');
         $user   = $this->usermodel->where('username', $session)->first();
         $toko   = $this->tokomodel->where('user_id', $user["id_user"])->first();
-
         $kode_produk = 'PRODUK-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
         $gambar = $this->request->getFile('gambar_produk');
         $namabaru = $gambar->getRandomName();
