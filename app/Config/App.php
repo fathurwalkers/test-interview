@@ -9,7 +9,7 @@ class App extends BaseConfig
     // public $baseURL = 'http://localhost:8080/';
     public $baseURL = 'http://localhost/aplikasi-tugas-besar/public/';
 
-    public $indexPage = 'index.php';
+    public $indexPage = '';
 
     public $uriProtocol = 'REQUEST_URI';
 

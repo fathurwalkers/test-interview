@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class UsersModel extends Model
 {
     protected $table      = 'users';
-    protected $primaryKey = 'user_id';
+    protected $primaryKey = 'id_user';
 
     protected $returnType     = 'array';
     // protected $useSoftDeletes = true;

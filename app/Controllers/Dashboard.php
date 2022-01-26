@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-// use App\Models\ProdukModel;
+
 use App\Models\UsersModel;
 use Config\Database;
 
@@ -10,7 +10,6 @@ class Dashboard extends BaseController
     public function __construct()
     {
         $this->usermodel = new UsersModel();
-        // $this->produkmodel = new ProdukModel();
     }
 
     public function index()
@@ -33,7 +32,6 @@ class Dashboard extends BaseController
     public function login()
     {
         $users = session('username');
-
         if ($users == NULL) {
             return view('login');
         } else {

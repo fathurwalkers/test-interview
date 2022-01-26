@@ -38,6 +38,12 @@ $routes->get('/register', 'Dashboard::register');
 $routes->get('/postregister', 'Dashboard::postregister');
 $routes->get('/logout', 'Dashboard::logout');
 
+// Generate Data 
+$routes->get('/generate/produk', 'Generate::generate_produk');
+
+// PRODUK 
+$routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
+
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
