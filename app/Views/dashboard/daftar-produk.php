@@ -35,7 +35,7 @@ Daftar Produk
                             <td width="15%">
                                 <div class="btn-group d-flex justify-content-center">
                                     <a href="#" class="btn btn-info btn-sm mr-1">LIHAT</a>
-                                    <a href="#" class="btn btn-primary btn-sm mr-1">UBAH</a>
+                                    <a href="<?= base_url('/produk/edit-produk') ?>/<?= $item["id_produk"] ?>" class="btn btn-primary btn-sm mr-1">UBAH</a>
                                     <!-- <a href="#" class="btn btn-danger btn-sm">HAPUS</a> -->
                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalhapus<?= $item["id_produk"] ?>">
                                         HAPUS

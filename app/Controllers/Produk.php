@@ -63,4 +63,12 @@ class Produk extends BaseController
         ]);
         return redirect()->to('/produk/daftar-produk');
     }
+
+    public function edit_produk($id)
+    {
+        $produk = $this->produkmodel->where('id_produk', $id)->first();
+        return view('dashboard/edit-produk', [
+            'produk' => $produk
+        ]);
+    }
 }

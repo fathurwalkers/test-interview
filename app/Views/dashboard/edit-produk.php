@@ -9,7 +9,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                Tambah Produk Baru 
+                Ubah Data Produk
             </div>
             <div class="card-body">
                 <div class="container">
@@ -17,12 +17,12 @@
                     <div class="row">
                         <div class="col-12">
 
-                            <form action="<?= base_url('/produk/post-tambah-produk'); ?>" method="POST" enctype="multipart/form-data">
+                            <form action="<?= base_url('/produk/post-update-produk'); ?>" method="POST" enctype="multipart/form-data">
                             <?php echo csrf_field(); ?>
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1"><span style="color:red;">* </span>Nama Produk : </label>
-                                    <input type="text" class="form-control" placeholder="Masukkan Nama Produk... " name="nama_produk" required autofocus value="<?= $produk["nama_produk"] ?>">
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama Produk... " name="nama_produk" required autofocus>
                                     <small class="form-text text-muted">contoh : Kopi Kapal Api </small>
                                 </div>
                                 <div class="form-group">
