@@ -22,7 +22,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1"><span style="color:red;">* </span>Nama Produk : </label>
-                                    <input type="text" class="form-control" placeholder="Masukkan Nama Produk... " name="nama_produk" required autofocus value="<?= $produk["nama_produk"] ?>">
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama Produk... " name="nama_produk" required autofocus>
                                     <small class="form-text text-muted">contoh : Kopi Kapal Api </small>
                                 </div>
                                 <div class="form-group">

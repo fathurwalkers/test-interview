@@ -71,4 +71,35 @@ class Produk extends BaseController
             'produk' => $produk
         ]);
     }
+
+    public function update_produk($id)
+    {
+        $produk = $this->produkmodel->where('id_produk', $id)->first();
+
+        $gambar = $this->request->getFile('gambar_produk');
+
+        // var_dump($gambar->getName());
+        // die;
+        if ($gambar->getName() == 0) {
+            $gambarbaru = $produk["gambar_produk"];
+            echo "GAMBAR LAMA"; 
+        } else {
+            $namabaru = $gambar->getRandomName();
+            $path = $this->request->getFile('gambar_produk')->move('img/produk/', $namabaru);
+            $gambarbaru = $namabaru;
+            echo "GAMBAR BARU"; 
+        }
+        var_dump($gambarbaru); 
+        echo "<br>";
+        echo $gambarbaru;
+        die;
+
+        $this->produkmodel->where('id_produk', $produk["id_produk"])->set([
+            'nama_produk' => $this->request->getVar('nama_produk'),
+            'harga_produk' => strval($this->request->getVar('harga_produk')),
+            'gambar_produk' => $gambarbaru,
+            'kode_produk' => strval($kode_produk),
+        ])->update();
+        return redirect()->to('/dashboard/daftar-produk');
+    }
 }
