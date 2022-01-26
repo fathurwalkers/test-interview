@@ -40,9 +40,13 @@ $routes->get('/logout', 'Dashboard::logout');
 
 // Generate Data 
 $routes->get('/generate/produk', 'Generate::generate_produk');
+$routes->get('/generate/toko', 'Generate::generate_toko');
 
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
+
+// TOKO 
+$routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

@@ -17,22 +17,20 @@ Daftar Produk
                 <table id="example" class="table table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Nama Produk</th>
-                            <th>Toko Pemilik</th>
-                            <th>Harga</th>
-                            <th>Kode Produk</th>
+                            <th>Nama Toko</th>
+                            <th>Pemilik Toko</th>
+                            <th>Kode Toko</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <?php foreach ($produk as $item) {  ?>
-                        <?php $tokonama = $toko->where('id_toko', $item["toko_id"])->first(); ?>
+                        <?php foreach ($toko as $item) {  ?>
+                        <?php $usernama = $user->where('id_user', $item["user_id"])->first(); ?>
                         <tr>
-                            <td><?= $item["nama_produk"] ?></td>
-                            <td><?= $tokonama["nama_toko"] ?></td>
-                            <td><?= $item["harga_produk"] ?></td>
-                            <td><?= $item["kode_produk"] ?></td>
+                            <td><?= $item["nama_toko"] ?></td>
+                            <td><?= $usernama["nama"] ?></td>
+                            <td><?= $item["kode_toko"] ?></td>
                             <td width="15%">
                                 <div class="btn-group d-flex justify-content-center">
                                     <a href="#" class="btn btn-info btn-sm mr-1">LIHAT</a>

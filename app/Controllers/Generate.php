@@ -16,12 +16,30 @@ class Generate extends BaseController
         $this->fake             = \Faker\Factory::create('id_ID');
     }
 
+    public function generate_toko()
+    {
+        $faker      = $this->fake;
+        $user       = $this->usermodel->findAll();
+        $randarray = array_rand($user);
+        $iduser = $user[$randarray]["id_user"];
+        $kode_toko        = 'TOKO-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
+        $savetoko = $this->tokomodel->save([
+            'nama_toko' => $faker->streetName(),
+            'pemilik_toko' => $faker->randomNumber(5, true),
+            'kode_toko' => $kode_toko,
+            'user_id'   => number_format($iduser)
+        ]);
+        var_dump($savetoko);
+        die;
+        return redirect()->to('/toko/daftar-toko');
+    }
+
     public function generate_produk()
     {
         $faker      = $this->fake;
         for ($i=0; $i < 25; $i++) { 
             $toko       = $this->tokomodel->findAll();
-            $kode_produk        = 'TOKO-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
+            $kode_produk        = 'PRODUK-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
             $randomgambarproduk     = [
                 '1'=>'produk1.jpg',
                 '2'=>'produk2.jpg',

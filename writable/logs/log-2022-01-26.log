@@ -203,3 +203,36 @@ CRITICAL - 2022-01-26 13:16:14 --> Call to a member function where() on null
 #6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+ERROR - 2022-01-26 13:25:56 --> Column 'kode_toko' cannot be null
+ERROR - 2022-01-26 13:25:57 --> Column 'kode_toko' cannot be null
+CRITICAL - 2022-01-26 13:31:12 --> Invalid argument supplied for foreach()
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Views\dashboard\daftar-toko.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\Users\\fathur...', 28, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(210): include('C:\\Users\\fathur...')
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/dafta...', Array, true)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(20): view('dashboard/dafta...', Array)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->daftar_toko()
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-26 13:34:02 --> Call to a member function where() on array
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(210): include()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/dafta...', Array, true)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(22): view('dashboard/dafta...', Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->daftar_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-26 13:34:04 --> Call to a member function where() on array
+#0 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(210): include()
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/dafta...', Array, true)
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Toko.php(22): view('dashboard/dafta...', Array)
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Toko->daftar_toko()
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+#6 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
