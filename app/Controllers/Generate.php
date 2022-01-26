@@ -19,7 +19,7 @@ class Generate extends BaseController
     public function generate_user()
     {
         $faker      = $this->fake;
-        for ($i=0; $i < 10; $i++) { 
+        for ($i=0; $i < 25; $i++) { 
             $randomlevel     = [
                 // '1'=>'admin',
                 '1'=>'user',
@@ -41,7 +41,7 @@ class Generate extends BaseController
     public function generate_toko()
     {
         $faker      = $this->fake;
-        for ($i=0; $i < 20; $i++) { 
+        for ($i=0; $i < 50; $i++) { 
             $user       = $this->usermodel->where('level', 'penjual')->findAll();
             $randarray = array_rand($user);
             $iduser = $user[$randarray]["id_user"];
@@ -59,7 +59,7 @@ class Generate extends BaseController
     public function generate_produk()
     {
         $faker      = $this->fake;
-        for ($i=0; $i < 100; $i++) { 
+        for ($i=0; $i < 200; $i++) { 
             $toko       = $this->tokomodel->findAll();
             $kode_produk        = 'PRODUK-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
             $randomgambarproduk     = [
