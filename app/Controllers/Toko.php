@@ -23,6 +23,15 @@ class Toko extends BaseController
         ]);
     }
 
+    public function tambah_toko()
+    {
+        $session = session('username');
+        $user   = $this->usermodel->where('username', $session)->first();
+        return view('dashboard/tambah-toko', [
+            'user' => $user
+        ]);
+    }
+
     public function hapus_toko($id)
     {
         $toko = $this->tokomodel->where('id_toko', $id)->delete();
