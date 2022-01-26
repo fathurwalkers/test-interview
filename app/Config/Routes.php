@@ -49,6 +49,7 @@ $routes->get('/user/daftar-user', 'Dashboard::daftar_user');
 
 // TOKO 
 $routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
+$routes->add('/toko/hapus-toko/(:any)', 'Toko::hapus_toko/$1');
 
 // PRODUK 
 $routes->get('/produk/daftar-produk', 'Produk::daftar_produk');

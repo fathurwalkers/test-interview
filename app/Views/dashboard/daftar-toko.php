@@ -35,10 +35,37 @@ Daftar Toko
                                 <div class="btn-group d-flex justify-content-center">
                                     <a href="#" class="btn btn-info btn-sm mr-1">LIHAT</a>
                                     <a href="#" class="btn btn-primary btn-sm mr-1">UBAH</a>
-                                    <a href="#" class="btn btn-danger btn-sm">HAPUS</a>
+                                    <!-- <a href="#" class="btn btn-danger btn-sm">HAPUS</a> -->
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalhapus<?= $item["id_toko"] ?>">
+                                        HAPUS
+                                    </button>
                                 </div>
                             </td>
                         </tr>
+
+                        <div class="modal fade" id="modalhapus<?= $item["id_toko"] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Apakah anda yakin ingin menghapus Toko ini ? <br> 
+                                            Nama Toko : <?php echo $item["nama_toko"] ?>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-info" data-dismiss="modal">Tidak</button>
+                                        <form action="<?= base_url('/toko/hapus-toko'); ?>/<?= $item["id_toko"]; ?>" method="GET">
+                                            <button type="submit" class="btn btn-danger">Hapus</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <?php } ?>
 
@@ -56,5 +83,9 @@ Daftar Toko
     $(document).ready( function () {
         $('#example').DataTable();
     } );
+
+    $('#modal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 </script>
 <?= $this->endSection(); ?>

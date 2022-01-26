@@ -22,4 +22,10 @@ class Toko extends BaseController
             'user' => $user
         ]);
     }
+
+    public function hapus_toko($id)
+    {
+        $toko = $this->tokomodel->where('id_toko', $id)->delete();
+        return redirect()->to('/toko/daftar-toko');
+    }
 }
