@@ -59,8 +59,10 @@ Daftar Produk
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-info" data-dismiss="modal">Tidak</button>
+                                        <form action="<?= base_url('/produk/hapus-produk'); ?>/<?= $item["id_produk"]; ?>" method="GET">
+                                            <button type="submit" class="btn btn-danger">Hapus</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

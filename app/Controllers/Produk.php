@@ -23,8 +23,9 @@ class Produk extends BaseController
         ]);
     }
 
-    public function hapus_produk()
+    public function hapus_produk($id)
     {
-        // 
+        $produk = $this->produkmodel->where('id_produk', $id)->delete();
+        return redirect()->to('/produk/daftar-produk');
     }
 }
