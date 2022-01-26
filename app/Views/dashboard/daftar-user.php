@@ -5,7 +5,7 @@
 <?= $this->endSection(); ?>
 
 <?= $this->section('main-header') ?>
-Daftar Toko 
+Daftar Pengguna (User) 
 <?= $this->endSection() ?>
 
 <?php echo $this->section('main-content'); ?>
@@ -17,20 +17,21 @@ Daftar Toko
                 <table id="example" class="table table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Nama Toko</th>
-                            <th>Pemilik Toko</th>
-                            <th>Kode Toko</th>
+                            <th>Nama</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Level</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <?php foreach ($toko as $item) {  ?>
-                        <?php $usernama = $user->where('id_user', $item["user_id"])->first(); ?>
+                        <?php foreach ($user as $item) {  ?>
                         <tr>
-                            <td><?= $item["nama_toko"] ?></td>
-                            <td><?= $usernama["nama"] ?></td>
-                            <td><?= $item["kode_toko"] ?></td>
+                            <td><?= $item["nama"] ?></td>
+                            <td><?= $item["username"] ?></td>
+                            <td><?= $item["password"] ?></td>
+                            <td><?= $item["level"] ?></td>
                             <td width="15%">
                                 <div class="btn-group d-flex justify-content-center">
                                     <a href="#" class="btn btn-info btn-sm mr-1">LIHAT</a>

@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\UsersModel;
+use App\Models\TokoModel;
+use App\Models\ProdukModel;
 use Config\Database;
 
 class Dashboard extends BaseController
@@ -10,6 +12,8 @@ class Dashboard extends BaseController
     public function __construct()
     {
         $this->usermodel = new UsersModel();
+        $this->tokomodel = new TokoModel();
+        $this->produkmodel = new ProdukModel();
     }
 
     public function index()
@@ -20,6 +24,14 @@ class Dashboard extends BaseController
         } else {
             return view('dashboard/index', ['users' => $users]);
         }
+    }
+
+    public function daftar_user()
+    {
+        $user = $this->usermodel->findAll();
+        return view('dashboard/daftar-user', [
+            'user' => $user
+        ]);
     }
 
     public function logout()

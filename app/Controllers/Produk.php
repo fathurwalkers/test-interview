@@ -22,4 +22,9 @@ class Produk extends BaseController
             'toko' => $toko
         ]);
     }
+
+    public function hapus_produk()
+    {
+        // 
+    }
 }

@@ -28,18 +28,43 @@ Daftar Produk
                         <?php foreach ($produk as $item) {  ?>
                         <?php $tokonama = $toko->where('id_toko', $item["toko_id"])->first(); ?>
                         <tr>
-                            <td><?= $item["nama_produk"] ?></td>
-                            <td><?= $tokonama["nama_toko"] ?></td>
-                            <td><?= $item["harga_produk"] ?></td>
-                            <td><?= $item["kode_produk"] ?></td>
+                            <td><?= $item["nama_produk"]; ?></td>
+                            <td><?= $tokonama["nama_toko"]; ?></td>
+                            <td><?= $item["harga_produk"]; ?></td>
+                            <td><?= $item["kode_produk"]; ?></td>
                             <td width="15%">
                                 <div class="btn-group d-flex justify-content-center">
                                     <a href="#" class="btn btn-info btn-sm mr-1">LIHAT</a>
                                     <a href="#" class="btn btn-primary btn-sm mr-1">UBAH</a>
-                                    <a href="#" class="btn btn-danger btn-sm">HAPUS</a>
+                                    <!-- <a href="#" class="btn btn-danger btn-sm">HAPUS</a> -->
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalhapus<?= $item["id_produk"] ?>">
+                                        HAPUS
+                                    </button>
                                 </div>
                             </td>
                         </tr>
+
+                        <div class="modal fade" id="modalhapus<?= $item["id_produk"] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Apakah anda yakin ingin menghapus Produk ini ? <br> 
+                                            Nama Produk : <?php echo $item["nama_produk"] ?>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <?php } ?>
 
@@ -57,5 +82,9 @@ Daftar Produk
     $(document).ready( function () {
         $('#example').DataTable();
     } );
+
+    $('#modal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 </script>
 <?= $this->endSection(); ?>

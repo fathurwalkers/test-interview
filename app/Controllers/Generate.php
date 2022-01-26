@@ -22,8 +22,8 @@ class Generate extends BaseController
         for ($i=0; $i < 10; $i++) { 
             $randomlevel     = [
                 // '1'=>'admin',
-                '1'=>'penjual',
-                '2'=>'user'
+                '1'=>'user',
+                '2'=>'penjual'
             ];
             $key = array_rand($randomlevel);
             $level = $randomlevel[$key];
@@ -35,7 +35,7 @@ class Generate extends BaseController
                 'level'   => $level
             ]);
         }
-        return redirect()->to('/produk/daftar-produk');
+        return redirect()->to('/user/daftar-user');
     }
 
     public function generate_toko()
@@ -47,7 +47,7 @@ class Generate extends BaseController
             $iduser = $user[$randarray]["id_user"];
             $kode_toko        = 'TOKO-' . strtoupper($faker->randomLetter()) . $faker->randomNumber(2, true) . strtoupper($faker->randomLetter()) . $faker->randomNumber(1, true); 
             $savetoko = $this->tokomodel->save([
-                'nama_toko' => $faker->streetName(),
+                'nama_toko' => $faker->company(),
                 'pemilik_toko' => $faker->randomNumber(5, true),
                 'kode_toko' => $kode_toko,
                 'user_id'   => number_format($iduser)
@@ -74,7 +74,7 @@ class Generate extends BaseController
             $randarray = array_rand($toko);
             $idtoko = $toko[$randarray]["id_toko"];
             $saveproduk = $this->produkmodel->save([
-                'nama_produk' => $faker->streetName(),
+                'nama_produk' => $faker->words($key, true),
                 'harga_produk' => $faker->randomNumber(5, true),
                 'gambar_produk' => $gambar_produk,
                 'kode_produk' => $kode_produk,
@@ -89,7 +89,6 @@ class Generate extends BaseController
         $this->generate_user();
         $this->generate_toko();
         $this->generate_produk();
-        echo "SUKSES GENERATE USER - TOKO - PRODUK!";
-        die;
+        return redirect()->to('/');
     }
 }

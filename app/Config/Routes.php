@@ -44,11 +44,15 @@ $routes->get('/generate/produk', 'Generate::generate_produk');
 $routes->get('/generate/toko', 'Generate::generate_toko');
 $routes->get('/generate/user', 'Generate::generate_user');
 
-// PRODUK 
-$routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
+// USER 
+$routes->get('/user/daftar-user', 'Dashboard::daftar_user');
 
 // TOKO 
 $routes->get('/toko/daftar-toko', 'Toko::daftar_toko');
+
+// PRODUK 
+$routes->get('/produk/daftar-produk', 'Produk::daftar_produk');
+$routes->add('/produk/hapus-produk/(:any)', 'Produk::hapus_produk/$1');
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
