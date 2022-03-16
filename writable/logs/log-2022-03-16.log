@@ -1,0 +1,24 @@
+CRITICAL - 2022-03-16 03:41:12 --> array_rand(): Array is empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand(): A...', 'C:\\Users\\fathur...', 74, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(74): array_rand(Array)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-16 03:41:17 --> array_rand(): Array is empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand(): A...', 'C:\\Users\\fathur...', 74, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(74): array_rand(Array)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-16 03:42:40 --> array_rand(): Array is empty
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_rand(): A...', 'C:\\Users\\fathur...', 74, Array)
+#1 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\app\Controllers\Generate.php(74): array_rand(Array)
+#2 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(825): App\Controllers\Generate->generate_produk()
+#3 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate))
+#4 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\fathurwalkers\Desktop\htdocs\aplikasi-tugas-besar\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
